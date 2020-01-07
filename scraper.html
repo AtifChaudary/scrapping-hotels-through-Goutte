@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Scrapping</title>
+</head>
+<body>
+<form method="post" action="index.php">
+    Enter Location: <input type="text" id="inputLocation" name="inputLocation">
+</form>
+
+<script>
+function initMap() {
+    var input = document.getElementById('inputLocation');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap"
+async defer></script>
+
+</body>
+</html>
